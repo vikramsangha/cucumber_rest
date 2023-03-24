@@ -1,7 +1,7 @@
 Feature: Adequate Shop API Test
 
   @test_scenario
-  Scenario Outline: Create customer with <name>, <email> and <location>
+  Scenario Outline: Create customer with <name> and <location>
     Given I set the base URL
     When I Add user with '<name>' and location '<location>'
     Then the response code should be 201
@@ -12,7 +12,7 @@ Feature: Adequate Shop API Test
       | def   | mumbai   |
 
   @test_scenario
-  Scenario Outline: Verify Customer Details with <id>, <name>, and <location>
+  Scenario Outline: Verify Customer Details with <id>
     Given I set the base URL
     When I get the Customer details with id <id>
     Then the response code should be 200
