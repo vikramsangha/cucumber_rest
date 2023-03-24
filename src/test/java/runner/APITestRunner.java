@@ -14,15 +14,10 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 
-/**
- * @author vikramjeet
- *
- */
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
 features = "src/test/resources/features", 
-tags = {"@test_post"},
+tags = {"@test_scenario"},
 glue = "stepdefinitions"
 )
 
